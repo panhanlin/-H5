@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .yin{
+            top: 50%;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border: 1px solid #666;
+            animation: yd 5s infinite ease-in;
+            /*linear*/
+        }
+        @keyframes yd {
+            0%{
+                transform: rotate(0);
+            }
+            50%{
+                transform:translate(200px) rotate(180deg) scale(1.5,1.5);
+                border-radius:50px;
+                top: 100px;
+
+            }
+            100%{
+                transform: translate(400px) rotate(360deg)  ;
+                border-radius:100px;
+
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="yin">
+
+</div>
+</body>
+</html>
